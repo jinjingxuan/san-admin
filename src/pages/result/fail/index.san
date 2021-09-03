@@ -50,7 +50,7 @@ export default {
 @import '~santd/es/core/styles/themes/default.less';
 
 .result-fail-page {
-    margin: 20px;
+    padding: 20px;
     .error-icon {
         margin-right: 8px;
         color: @highlight-color;

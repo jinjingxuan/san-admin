@@ -33,3 +33,9 @@ export default {
     }
 };
 </script>
+
+<style lang="less" scoped>
+.result-success-page {
+    padding: 20px;
+}
+</style>

@@ -1,11 +1,9 @@
 <template>
     <s-footer class="{{className}}" s-if="links || cyright">
         <global-footer links="{{links}}">
-            <template s-if="cyright">
-                <div slot="copyright">
-                    Copyright <s-icon type="copyright"/> {{cyright}}
-                </div>
-            </template>
+            <div s-if="cyright" slot="copyright">
+                Copyright <s-icon type="copyright"/> {{cyright}}
+            </div>
         </global-footer>
     </s-footer>
 </template>
@@ -39,7 +37,7 @@ export default {
     initData() {
         return {
             links: defaultLinks,
-            copyright: defaultCopyright
+            cyright: defaultCopyright
         };
     },
     components: {
