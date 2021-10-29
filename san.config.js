@@ -61,7 +61,10 @@ module.exports = {
             updateThemeSetting(app);
         },
         contentBase: `${outputDir}/`,
-        proxy
+        proxy,
+        watchOptions: {
+            poll: false
+        }
     },
 
     loaderOptions: {
